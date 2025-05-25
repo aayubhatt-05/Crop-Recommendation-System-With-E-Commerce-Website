@@ -1,0 +1,16 @@
+# Ignore XAMPP-specific files
+*.log
+htdocs/
+
+# Ignore sensitive files
+config.php
+/admin/config.php
+
+# Ignore uploaded images
+images/*
+!images/.gitkeep
+
+# Ignore PHP cache and session files
+*.cache
+*.session
+

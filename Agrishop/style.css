@@ -1,0 +1,649 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7e6;
+    color: #333;
+}
+
+/* Navigation Bar */
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(74, 119, 60, 0.7), rgba(74, 119, 60, 0.7)),
+                url('farm-background.jpg');
+    color: white;
+}
+
+/* Products Page */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Product Card Styles */
+.product-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cart {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-cart:hover {
+    background-color: #218838;
+}
+
+.btn-wishlist {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-wishlist:hover {
+    background-color: #e0a800;
+}
+/* Login Page Styling */
+.login-container {
+    min-height: calc(100vh - 70px); /* Subtract navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(74, 119, 60, 0.8), rgba(74, 119, 60, 0.8)),
+                url('farm-field.jpg'); /* Add a farm background image */
+    background-size: cover;
+}
+
+.login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #4a773c;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #4a773c;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #d4e8c8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-group.checkbox input {
+    width: auto;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4a773c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #375d2d;
+}
+
+.additional-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-links a {
+    color: #4a773c;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+/* Services Section */
+.services {
+    padding: 4rem 2rem;
+    background-color: #f0f7e6;
+    text-align: center;
+}
+
+.services h2 {
+    color: #4a773c;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    color: #4a773c;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    padding: 0 1rem 1.5rem;
+    color: #666;
+    font-size: 1rem;
+}
+/* Products Page Layout */
+.products-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    color: #4a773c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-list li {
+    margin-bottom: 0.8rem;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.category-list a:hover,
+.category-list a.active {
+    background-color: #4a773c;
+    color: white;
+}
+
+.product-grid {
+    flex: 1;
+    padding: 0;
+}
+/* Registration Page Styling */
+.register-container {
+    min-height: calc(100vh - 70px); /* Subtract navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(74, 119, 60, 0.8), rgba(74, 119, 60, 0.8)),
+                url('farm-field.jpg');
+    background-size: cover;
+}
+
+.register-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.register-box h2 {
+    color: #4a773c;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.register-box .form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.register-box .form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #4a773c;
+    font-weight: 500;
+}
+
+.register-box .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #d4e8c8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.register-box .form-group.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.register-box .form-group.checkbox input {
+    width: auto;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4a773c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-box button:hover {
+    background-color: #375d2d;
+}
+
+.register-box .additional-links {
+    margin-top: 1rem;
+}
+
+.register-box .additional-links a {
+    color: #4a773c;
+    text-decoration: none;
+}
+
+.register-box .additional-links a:hover {
+    text-decoration: underline;
+}
+/* Cart and Wishlist Styling */
+.cart, .wishlist {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart h2, .wishlist h2 {
+    color: #4a773c;
+    margin-bottom: 1.5rem;
+}
+
+.cart-items, .wishlist-items {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.cart-item, .wishlist-item {
+    display: flex;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cart-item img, .wishlist-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-item h3, .wishlist-item h3 {
+    color: #4a773c;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item p, .wishlist-item p {
+    margin-bottom: 0.5rem;
+}
+
+.cart-item button, .wishlist-item button {
+    padding: 0.5rem 1rem;
+    background-color: #4a773c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item button:hover, .wishlist-item button:hover {
+    background-color: #375d2d;
+}
+/* Account Menu */
+.account-menu {
+    position: relative;
+}
+
+.account-link {
+    cursor: pointer;
+}
+
+.account-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 150px;
+    z-index: 100;
+}
+
+.account-menu:hover .account-dropdown {
+    display: block;
+}
+
+.account-dropdown a {
+    display: block;
+    padding: 0.8rem;
+    color: #4a773c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.account-dropdown a:hover {
+    background-color: #d4e8c8;
+}
+
+/* Account Page */
+.account-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.account-container h2 {
+    color: #4a773c;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.account-details {
+    padding: 1rem;
+}
+
+.account-details h3 {
+    color: #4a773c;
+    margin-bottom: 1rem;
+}
+
+.account-details p {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.account-details strong {
+    color: #375d2d;
+}
+/* Contact Page Styling */
+/* Contact Page Styling */
+.contact-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #d4e8c8 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle decorative background element */
+.contact-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(74, 119, 60, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.contact-container::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(74, 119, 60, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.contact-container h2 {
+    color: #4a773c;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #375d2d;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.email-icon {
+    background-image: url('images/email-icon.png'); /* Replace with your icon path */
+}
+
+.phone-icon {
+    background-image: url('images/phone-icon.png'); /* Replace with your icon path */
+}
+
+.address-icon {
+    background-image: url('images/address-icon.png'); /* Replace with your icon path */
+}
+
+.contact-card h3 {
+    color: #4a773c;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.contact-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0;
+}
+
+.contact-card a {
+    color: #4a773c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #375d2d;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contact-container h2 {
+        font-size: 2rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+}
+
+.success-message {
+    color: #4a773c;
+    background: #d4e8c8;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+}
